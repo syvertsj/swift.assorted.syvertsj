@@ -1,0 +1,13 @@
+This is a test of the simple lossless LZ778 "offset" compression and 
+uncompression algorithm.
+The implementation uses a hash to store the terms and the index of 
+the first occurance. Note, punctuation and case are handled as different 
+tokens from lowercase words without punctuation succeeding.
+This is not going to work particularly well if there are not many
+repeated words. But if there are many repeated words there will
+be greater compression. This compression method is very simple
+but is used in "lz78" compression algorithm. The implementation is 
+simple and intended to be so. 
+Our actions are controlled by electronic computers.
+This is a test and this is a data file.
+Our actions are controlled by electronic computers.
